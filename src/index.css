@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* ✅ Theme Tokens (MNC-safe: Slate + Blue) */
+:root {
+  --bg: #f8fafc;        /* slate-50 */
+  --card: #ffffff;
+  --fg: #0f172a;        /* slate-900 */
+  --muted: #475569;     /* slate-600 */
+  --border: #e2e8f0;    /* slate-200 */
+
+  --accent: #2563eb;    /* blue-600 */
+  --accent-hover: #1d4ed8; /* blue-700 */
+  --ring: rgba(37, 99, 235, 0.35);
+}
+
+.dark {
+  --bg: #020617;        /* slate-950 */
+  --card: rgba(15, 23, 42, 0.6); /* slate-900/60 */
+  --fg: #f8fafc;        /* slate-50 */
+  --muted: #94a3b8;     /* slate-400 */
+  --border: #1f2937;    /* gray-800-ish */
+
+  --accent: #60a5fa;    /* blue-400 */
+  --accent-hover: #3b82f6; /* blue-500 */
+  --ring: rgba(96, 165, 250, 0.35);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+section[id] {
+  scroll-margin-top: 84px; /* adjust based on your navbar height */
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+}
