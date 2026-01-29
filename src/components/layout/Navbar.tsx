@@ -30,8 +30,13 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--bg)]/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#top" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <div className="grid h-9 w-9 place-items-center rounded-xl border border-[var(--border)] bg-white/60 dark:bg-white/5 shadow-sm">
-            <span className="text-sm font-semibold">TZ</span>
+          <div className="h-9 w-9 overflow-hidden rounded-xl border border-[var(--border)] bg-white/60 dark:bg-white/5 shadow-sm">
+            <img
+              src="/img/avatar.jpg"
+              alt="Tan Ze Quan"
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
           </div>
           <div className="leading-tight">
             <div className="text-sm font-semibold text-[var(--fg)]">Tan Ze Quan</div>

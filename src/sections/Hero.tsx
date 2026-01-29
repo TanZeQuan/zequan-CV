@@ -80,7 +80,7 @@ export default function Hero() {
                 },
                 {
                   k: { en: "Projects", zh: "项目" },
-                  v: "6+",
+                  v: "8+",
                 },
                 {
                   k: { en: "Focus", zh: "专注" },
@@ -88,8 +88,8 @@ export default function Hero() {
                 },
                 {
                   k: { en: "Stack", zh: "技术栈" },
-                  v: "React • Vue • TS",
-                },
+                  v: "React • Vue • TypeScript • CSS",
+                }
               ].map((x) => (
                 <div
                   key={x.k.en}

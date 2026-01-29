@@ -38,8 +38,19 @@ export const skillGroups: SkillGroup[] = [
   {
     title: { en: "Tools & Workflow", zh: "工具与流程" },
     items: {
-      en: ["Git", "GitHub", "AI-assisted Development (ChatGPT, Copilot)"],
-      zh: ["Git（版本控制）", "GitHub", "AI 辅助开发（ChatGPT、Copilot）"],
+      en: ["Git", "GitHub", "AI-assisted Development (ChatGPT, Claude, Gemini)"],
+      zh: ["Git（版本控制）", "GitHub", "AI 辅助开发（ChatGPT、Claude, Gemini）"],
+    },
+  },
+  {
+    title: { en: "State Management", zh: "状态管理" },
+    note: {
+      en: "Intermediate level through hands-on project usage",
+      zh: "透过实际项目使用，具备中阶程度",
+    },
+    items: {
+      en: ["Redux (Intermediate)", "Zustand (Intermediate)"],
+      zh: ["Redux（中阶）", "Zustand（中阶）"],
     },
   },
 ];
