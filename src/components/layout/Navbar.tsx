@@ -66,7 +66,7 @@ export default function Navbar() {
             );
           })}
 
-          <a href="/resume.pdf" className="ml-2">
+          <a href="/img/zequan-CV.pdf" className="ml-2">
             <Button variant="outline" className="border-[var(--border)]">
               {t(labels.nav.resume, lang)}
             </Button>
