@@ -49,7 +49,7 @@ export default function Hero() {
               </a>
 
               {/* Tertiary */}
-              <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              <a href="/img/zequan-CV.pdf" target="_blank" rel="noreferrer">
                 <Button variant="ghost">
                   {lang === "en" ? "Download Resume" : "下载简历"}
                 </Button>
