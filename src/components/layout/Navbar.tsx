@@ -133,7 +133,7 @@ export default function Navbar() {
                 );
               })}
 
-              <a href="/resume.pdf" className="mt-2" onClick={() => setOpen(false)}>
+               <a href="/img/zequan-CV.pdf" target="_blank" rel="noreferrer" className="mt-2">
                 <Button variant="outline" className="w-full border-[var(--border)]">
                   {t(labels.nav.resume, lang)}
                 </Button>
