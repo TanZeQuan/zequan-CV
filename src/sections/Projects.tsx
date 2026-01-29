@@ -83,8 +83,9 @@ function ProjectCard({ p, lang }: { p: Project; lang: "en" | "zh" }) {
 
       {/* Content */}
       <div className="p-6">
-        <div className="flex items-start gap-3">
-          <div className="min-w-0">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:gap-4">
+          {/* Left: title + desc */}
+          <div className="min-w-0 flex-1">
             <h3 className="text-base font-semibold text-[var(--fg)]">
               {p.name[lang]}
             </h3>
@@ -93,9 +94,15 @@ function ProjectCard({ p, lang }: { p: Project; lang: "en" | "zh" }) {
             </p>
           </div>
 
+          {/* Right: button */}
           {p.primaryLink ? (
-            <a href={p.primaryLink.href} target="_blank" rel="noreferrer" className="ml-auto shrink-0">
-              <Button variant="outline" className="px-3 py-2">
+            <a
+              href={p.primaryLink.href}
+              target="_blank"
+              rel="noreferrer"
+              className="sm:ml-auto"
+            >
+              <Button variant="outline" className="w-full px-3 py-2 sm:w-auto">
                 {p.primaryLink.label[lang]}
               </Button>
             </a>
